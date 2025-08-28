@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jenkins-deployment
-  namespace: devops-tools
+  namespace: jenkins
 spec:
   replicas: 1
   selector:
