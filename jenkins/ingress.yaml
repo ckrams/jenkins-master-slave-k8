@@ -9,7 +9,7 @@
     spec:
       ingressClassName: nginx # Or your specific ingress class
       rules:
-      - host: jenkins.argocd.com # Replace with your desired domain
+      - host: jenkins.localdomain # Replace with your desired domain
         http:
           paths:
           - path: /
