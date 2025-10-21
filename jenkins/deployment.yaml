@@ -20,7 +20,10 @@ spec:
             runAsUser: 1000
       containers:
         - name: jenkins
-          image: jenkins/jenkins:lts
+          image: ckrams/jenkins-sealed-v1:armd64
+          env:
+            - name: CASC_JENKINS_CONFIG
+              value: 
           resources:
             limits:
               memory: "2Gi"
