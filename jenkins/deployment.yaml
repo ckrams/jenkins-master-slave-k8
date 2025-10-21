@@ -24,7 +24,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: CASC_JENKINS_CONFIG
-              value: admin
+              value: /usr/share/jenkins/casc_configs/jenkins-casc.yaml
           resources:
             limits:
               memory: "2Gi"
