@@ -25,6 +25,8 @@ spec:
           env:
             - name: CASC_JENKINS_CONFIG
               value: /usr/share/jenkins/casc_configs/jenkins-casc.yaml
+            - name: JENKINS_PASSWORD
+              value: admin
           resources:
             limits:
               memory: "2Gi"
