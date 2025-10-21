@@ -22,9 +22,9 @@ spec:
         - name: jenkins
           image: ckrams/jenkins-sealed-v3:arm
           imagePullPolicy: Always
-  #        env:
-  #          - name: CASC_JENKINS_CONFIG
-  #            value: admin
+          env:
+            - name: CASC_JENKINS_CONFIG
+              value: admin
           resources:
             limits:
               memory: "2Gi"
